@@ -16,6 +16,10 @@ const (
 	MainnetRPCEndpoint  = "https://api.mainnet-beta.solana.com"
 )
 
+var (
+    ApiKey string
+)
+
 type JsonRpcRequest struct {
 	JsonRpc string `json:"jsonrpc"`
 	Id      uint64 `json:"id"`
@@ -84,6 +88,10 @@ func New(opts ...Option) RpcClient {
 	return *client
 }
 
+func SetApiKey(k string) {
+    ApiKey = k
+}
+
 // Call will return body of response. if http code beyond 200~300, the error also returns.
 func (c *RpcClient) Call(ctx context.Context, params ...any) ([]byte, error) {
 	// prepare payload
@@ -98,6 +106,9 @@ func (c *RpcClient) Call(ctx context.Context, params ...any) ([]byte, error) {
 		return nil, fmt.Errorf("failed to do http.NewRequestWithContext, err: %v", err)
 	}
 	req.Header.Add("Content-Type", "application/json")
+    if ApiKey != "" {
+	    req.Header.Add("x-api-key", ApiKey)
+    }
 
 	// do request
 	res, err := c.httpClient.Do(req)
