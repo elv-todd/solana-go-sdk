@@ -16,6 +16,10 @@ const (
 	MainnetRPCEndpoint  = "https://api.mainnet-beta.solana.com"
 )
 
+var (
+    ApiKey string
+)
+
 // Commitment describes how finalized a block is at that point in time
 type Commitment string
 
@@ -51,6 +55,10 @@ func NewRpcClient(endpoint string) RpcClient {
 	return RpcClient{endpoint: endpoint}
 }
 
+func SetApiKey(k string) {
+    ApiKey = k
+}
+
 // Call will return body of response. if http code beyond 200~300, the error also returns.
 func (c *RpcClient) Call(ctx context.Context, params ...interface{}) ([]byte, error) {
 	// prepare payload
@@ -65,6 +73,9 @@ func (c *RpcClient) Call(ctx context.Context, params ...interface{}) ([]byte, er
 		return nil, fmt.Errorf("failed to do http.NewRequestWithContext, err: %v", err)
 	}
 	req.Header.Add("Content-Type", "application/json")
+    if ApiKey != "" {
+        req.Header.Add("x-api-key", ApiKey)
+    }
 
 	// do request
 	httpclient := &http.Client{}
