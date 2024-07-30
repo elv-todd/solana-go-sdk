@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blocto/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/common"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -42,7 +42,7 @@ func TestGetHashName(t *testing.T) {
 	}{
 		{
 			args: args{
-				name: "blocto",
+				name: "elv-todd",
 			},
 			want: []byte{0x62, 0x94, 0x3a, 0xc2, 0x9e, 0x7b, 0x9d, 0x4e, 0x38, 0x53, 0xb2, 0x84, 0xdd, 0x7f, 0x1, 0x66, 0xeb, 0x5f, 0x0, 0xe3, 0x1f, 0x25, 0x53, 0x51, 0x83, 0x61, 0x38, 0x33, 0xcd, 0xc5, 0xf9, 0x3},
 		},
@@ -68,20 +68,20 @@ func TestGetNameAccountKey(t *testing.T) {
 		want common.PublicKey
 	}{
 		{
-			name: "domain: blocto.sol",
+			name: "domain: elv-todd.sol",
 			args: args{
-				hashName:   GetHashName("blocto"),
+				hashName:   GetHashName("elv-todd"),
 				nameClass:  common.PublicKey{},
 				nameParent: SolTldAuthority,
 			},
 			want: common.PublicKeyFromString("6yAP2rFW7wQiqVmySE4DTfQSWmp6fR1geGyWx6SQMAhS"),
 		},
 		{
-			name: "domain yihau.blocto.sol",
+			name: "domain yihau.elv-todd.sol",
 			args: args{
 				hashName:   GetHashName("\x00yihau"),
 				nameClass:  common.PublicKey{},
-				nameParent: GetNameAccountKey(GetHashName("blocto"), common.PublicKey{}, SolTldAuthority),
+				nameParent: GetNameAccountKey(GetHashName("elv-todd"), common.PublicKey{}, SolTldAuthority),
 			},
 			want: common.PublicKeyFromString("5Cjg2Xah4Cc24yM7zsfbyBuXKZ6Wm9ZJqHa5n47vnvNz"),
 		},

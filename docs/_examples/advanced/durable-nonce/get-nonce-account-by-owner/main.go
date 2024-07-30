@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/blocto/solana-go-sdk/client"
-	"github.com/blocto/solana-go-sdk/common"
-	"github.com/blocto/solana-go-sdk/program/system"
-	"github.com/blocto/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/client"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/program/system"
+	"github.com/elv-todd/solana-go-sdk/rpc"
 )
 
 func main() {

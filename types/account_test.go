@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blocto/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/common"
 	"github.com/stretchr/testify/assert"
 )
 

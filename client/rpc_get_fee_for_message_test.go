@@ -5,10 +5,10 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/blocto/solana-go-sdk/internal/client_test"
-	"github.com/blocto/solana-go-sdk/pkg/pointer"
-	"github.com/blocto/solana-go-sdk/rpc"
-	"github.com/blocto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/internal/client_test"
+	"github.com/elv-todd/solana-go-sdk/pkg/pointer"
+	"github.com/elv-todd/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/types"
 )
 
 func TestClient_GetFeeForMessage(t *testing.T) {

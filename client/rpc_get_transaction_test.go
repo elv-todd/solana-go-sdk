@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/blocto/solana-go-sdk/common"
-	"github.com/blocto/solana-go-sdk/internal/client_test"
-	"github.com/blocto/solana-go-sdk/pkg/pointer"
-	"github.com/blocto/solana-go-sdk/rpc"
-	"github.com/blocto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/internal/client_test"
+	"github.com/elv-todd/solana-go-sdk/pkg/pointer"
+	"github.com/elv-todd/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/types"
 	"github.com/mr-tron/base58"
 )
 

@@ -3,7 +3,7 @@ package client
 import (
 	"context"
 
-	"github.com/blocto/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/rpc"
 )
 
 type IsBlockhashValidConfig struct {

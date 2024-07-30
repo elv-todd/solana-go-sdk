@@ -1,9 +1,9 @@
 package address_lookup_table
 
 import (
-	"github.com/blocto/solana-go-sdk/common"
-	"github.com/blocto/solana-go-sdk/pkg/bincode"
-	"github.com/blocto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/pkg/bincode"
+	"github.com/elv-todd/solana-go-sdk/types"
 )
 
 type Instruction uint32

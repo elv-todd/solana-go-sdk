@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/blocto/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/rpc"
 	"github.com/stretchr/testify/assert"
 )
 
