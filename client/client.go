@@ -8,9 +8,9 @@ import (
 	"strconv"
 
 	"github.com/mr-tron/base58"
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/rpc"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/types"
 )
 
 type Client struct {

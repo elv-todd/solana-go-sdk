@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/portto/solana-go-sdk/client"
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/program/assotokenprog"
-	"github.com/portto/solana-go-sdk/rpc"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/client"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/program/assotokenprog"
+	"github.com/elv-todd/solana-go-sdk/rpc"
+	"github.com/elv-todd/solana-go-sdk/types"
 )
 
 // FUarP2p5EnxD66vVDL4PWRoWMzA56ZVHG24hpEDFShEz

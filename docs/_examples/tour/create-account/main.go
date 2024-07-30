@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/mr-tron/base58"
-	"github.com/portto/solana-go-sdk/pkg/hdwallet"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/pkg/hdwallet"
+	"github.com/elv-todd/solana-go-sdk/types"
 	"github.com/tyler-smith/go-bip39"
 )
 

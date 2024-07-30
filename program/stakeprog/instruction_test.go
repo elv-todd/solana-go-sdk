@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/pkg/pointer"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/elv-todd/solana-go-sdk/common"
+	"github.com/elv-todd/solana-go-sdk/pkg/pointer"
+	"github.com/elv-todd/solana-go-sdk/types"
 )
 
 func TestSplit(t *testing.T) {
